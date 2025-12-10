@@ -79,9 +79,9 @@ st.dataframe(issue_table)
 # -------------------------
 def get_snowpark_session():
     connection_parameters = {
-        "account": "RLLELXZ-GXB17550",
-        "user": "Joven",
-        "password": "Jovengungob123",
+        "account": "CLCQTKU-OXB92104",
+        "user": "Michael",
+        "password": "Michaeltampoc25",
         "role": "ACCOUNTADMIN",
         "warehouse": "COMPUTE_WH"
     }
@@ -133,4 +133,5 @@ elif chatbot_option == "Gemini AI":
             reply = f"Error: {e}"
 
         st.chat_message("assistant").markdown(reply)
+
         st.session_state["messages"].append({"role": "assistant", "content": reply})
